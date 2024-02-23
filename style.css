@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
+body{
+    background-color: beige;
+}
 
 #navbar{
-    background-color: #f4f4f4;
+    background-color:rgba(13, 221, 117, 0.5);
     font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
   padding: 10px;
+  position: fixed;
+  width: 100%;  
+
 
 }
 
@@ -46,7 +51,7 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .title-text{
@@ -83,6 +88,25 @@ a:hover{
     object-position: 0px 1px;
 }
 
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.about-text{
+    max-width: 500px;
+    margin: 0 10px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 /* Mobile */
 @media (max-width: 550px) {
@@ -91,6 +115,9 @@ a:hover{
     }
     nav{ 
         justify-content: center;
+    }
+    #about{
+        width: 100%;
     }
 }   
 
